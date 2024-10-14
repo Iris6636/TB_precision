@@ -39,8 +39,8 @@ print(f'Precision@1: {precision_at_1:.7f}')
 # Create a pandas DataFrame
 df = pd.DataFrame(output_data)
 
-# Save to Excel
-output_excel_path = 'pred_vs_ground_truth_1014.xlsx'
-df.to_excel(output_excel_path, index=False)
+# Save to csv
+output_csv_path = 'pred_vs_ground_truth_1014.csv'
+df.to_csv(output_csv_path, index=False)
 
-print(f'Excel file saved to: {output_excel_path}')
+print(f'csv file saved to: {output_csv_path}')
